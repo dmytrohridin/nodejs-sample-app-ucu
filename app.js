@@ -4,4 +4,6 @@ const port = process.env.PORT || 80
 app.get("/", (request, response) => {
     response.send("<h2>Hello UCU!</h2>");
 });
-app.listen(port);
+app.listen(port, () => {
+    console.log(`Example app listening at http://localhost:${port}`);
+});
